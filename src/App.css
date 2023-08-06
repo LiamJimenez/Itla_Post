@@ -1,0 +1,191 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body Styling */
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Title Styling */
+h1.title {
+  margin: 0;
+  color: #4CAF50;
+  font-size: 36px;
+}
+
+/* Contenedor de Botones en la esquina superior derecha */
+#button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Botón Iniciar Sesión / Cerrar Sesión */
+#login-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Botón Registro */
+#register-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 40px auto; /* Centrar el contenedor horizontalmente */
+}
+
+/* Publications Container Styling */
+#publications {
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 400px; /* Altura máxima del contenedor de publicaciones */
+  overflow-y: auto; /* Agregar barra de desplazamiento vertical cuando sea necesario */
+}
+
+/* Individual Publication Styling */
+.publication {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  /* Ajustar el ancho del cuadro blanco de publicaciones */
+  width: 100%;
+  max-width: 600px;
+}
+
+/* User Info Styling */
+.user-info {
+  font-weight: bold;
+  color: #555;
+}
+
+/* User Section Styling */
+#user-section {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Login Form Styling */
+#login-form {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  display: none;
+}
+
+/* Input and Button Styling */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+/* Login Form Header Styling */
+#login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Post Form Styling */
+#post-form textarea {
+  resize: vertical;
+  height: 100px;
+  /* Ajustar el ancho del cuadro de texto para escribir publicaciones */
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+/* Close Button Styling */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Estilo para centrar los mensajes de los usuarios */
+.publication-content {
+  text-align: center;
+  padding: 0 20px; /* Ajustar el padding lateral para espacio en los lados */
+}
